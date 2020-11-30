@@ -1,18 +1,14 @@
 import sys
 
-from PyQt5.QtCore import QPoint, Qt, QEvent, QRect
-from PyQt5.QtGui import QKeySequence
-
-from PyQt5.QtWidgets import QWidget, QApplication, QLabel, QPushButton
+from PyQt5.QtWidgets import QWidget, QLabel
 from PyQt5.QtWidgets import QGridLayout, QHBoxLayout, QVBoxLayout
 from PyQt5.QtGui import QPalette, QColor
 
 from itemBtn import Button
-#from item import mapPhoto, arrow, startBtn
 from item import Item
 from gameWindow import GameWindow
 from rankWindow import RankWindow
-from player import Player
+
 import pickle
 
 class MainWindow(QWidget):
@@ -132,11 +128,11 @@ class MainWindow(QWidget):
     def showGamewindow(self):
         self.hide() # hide main window
         self.gameWindow = GameWindow(self.N, self.scoredb)
-        self.gameWindow.exec() # will wait till you close second window
-        self.show() # show main window again
+        self.gameWindow.exec()
+        self.show()
 
     def showRankwindow(self):
         self.hide() # hide main window
         self.rankWindow = RankWindow(self.scoredb)
-        self.rankWindow.exec() # will wait till you close second window
-        self.show() # show main window again
+        self.rankWindow.exec()
+        self.show()
