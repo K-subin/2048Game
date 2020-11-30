@@ -9,7 +9,6 @@ from item import Item
 from itemBtn import Button
 from gameMap import CMap
 
-from copy import copy
 import pickle
 
 class GameWindow(QDialog):
