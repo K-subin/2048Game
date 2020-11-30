@@ -53,24 +53,3 @@ class MoveBlock:
                 res.append([0]*(self.N-len(row)) + row)
         
         return res
-
-   
-        
-if __name__ == '__main__':
-
-    #map = ([[0,0,0,2],[0,0,0,2],[0,0,0,0], [0,0,0,2]])
-    mb = MoveBlock()
-    map = [[0,0,0,4],[0,0,2,2],[2,0,2,2], [0,0,0,2]]
-    print(map)
-    nextMap = mb.nextMove('L',map)
-    print(nextMap)
-    nextMap = mb.nextMove('R',map)
-    print(nextMap)
-    nextMap = mb.nextMove('U',map)
-    print(nextMap)
-    nextMap = mb.nextMove('D',map)
-    print(nextMap)
-    #map=np.array([[0,0,0,4],[0,0,2,2],[2,0,2,2], [0,0,0,2]])
-    #print(map)
-    #mv.nextMove('L',map)
-    #print(mv.nextMap)
