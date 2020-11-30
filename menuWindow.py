@@ -1,7 +1,7 @@
 import sys
 
 from PyQt5.QtWidgets import QWidget, QLabel
-from PyQt5.QtWidgets import QGridLayout, QHBoxLayout, QVBoxLayout
+from PyQt5.QtWidgets import QHBoxLayout, QVBoxLayout
 from PyQt5.QtGui import QPalette, QColor
 
 from itemBtn import Button
